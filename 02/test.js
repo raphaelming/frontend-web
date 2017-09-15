@@ -27,11 +27,11 @@ for(var i=1; i<=9; i++){
 var num = 0;
 var total = 0;
 
-for(var end = false; end === false; ){
+for(var end = false; end == false; ){
 
   num = prompt("숫자를 입력하시오~~~~~~~");
 
-  if(num === null){
+  if(num == null){
     alert("합은 "+ total +" 입니다");
     end = true;
     break;
