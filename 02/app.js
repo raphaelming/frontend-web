@@ -28,16 +28,20 @@
 // printHello('world');
 
 
-var person = {
-  name : 'ming',
-  age : 30,
-  cry: function(){
-    console.log('으앙');
-  }
-}
-console.log(person);
+// var person = {
+//   name : 'ming',
+//   age : 30,
+//   cry: function(){
+//     console.log('으앙');
+//   }
+// }
+// console.log(person);
 // alert("alert");
 //
 // var who = prompt("당신은 누구세요?");
 //
 // var isDelete = confirm("정말 삭제합니까?");
+
+setInterval(function(){
+  console.log(1);
+},1000);
