@@ -1,7 +1,7 @@
 var board = document.getElementById("board");
 var spans = document.querySelectorAll('#board span');
 var bTarget = spans[0];
-var bTargetColor = 'black';
+var bTargetColor
 
 
 function changeBg(event){
