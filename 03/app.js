@@ -41,11 +41,11 @@
 //   // debugger;
 // }
 // // log.addEventListener('mouseover', printLog)
-
+document.addEventListener("DOMContentLoaded", function(event) {
 var divs = document.querySelectorAll('#wrap div');
 // console.log(divs);
 function changeBg(event){
-  console.log('changeBg');
+  // console.log('changeBg');
   console.log(event.currentTarget);
   event.currentTarget.style.backgroundColor = 'blue';
   // divs[i].style.backgroundColor = 'blue';
@@ -54,4 +54,5 @@ function changeBg(event){
 for(var i=0; i<divs.length; i++){
 divs[i].addEventListener('click', changeBg)
 }
-// window.addEventListener('click',)
+console.log("Dom요소가 모두 로딩이 되었습니다");
+});
