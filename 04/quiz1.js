@@ -9,12 +9,26 @@ var todayPhoto = [
     ,{"url":"http://sports.media.daum.net/general/gallery/STARKIMYUNA/index.html","img":"http://icon.daumcdn.net/w/c/12/05/81727815537682839.jpeg","title":"&#39;교생&#39; 김연아, 스승의날에도 인기폭발","id":"20120516092003892"}
 ];
 
+// 버튼, object수 계산
+// 이벤트 등록
+
 var wrap = document.getElementById('wrap');
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var pageCount = document.getElementById('pageCount');
 
-var str = '';
-for(var i=0; i<todayPhoto.length; i++){
+var page = 1;
+var start = 0;
+var end = 3;
 
-    str += '<img src="'+todayPhoto[i].img+'"> ';
+function ImageList(imagelist, start, end){
+  var str = '';
+  for(var i=0; i<todayPhoto.length; i++){
+      str += '<img src="'+todayPhoto[i].img+'"> ';
+  }
 }
+
+
+
 
 wrap.innerHTML = str;
