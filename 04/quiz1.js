@@ -21,14 +21,25 @@ var page = 1;
 var start = 0;
 var end = 3;
 
-function ImageList(imagelist, start, end){
+function loadImageList(imagelist, start, end){
   var str = '';
-  for(var i=0; i<todayPhoto.length; i++){
+  for(var i=start; i<end; i++){
+      if(!imagelist[i]){
+        break;
+      }
       str += '<img src="'+todayPhoto[i].img+'"> ';
+      wrap.innerHTML = str;
+      pageCount.innerHTML = page;
   }
 }
 
+prev.addEventListener('click', function(){
+  console.log('prev');
+});
+
+next.addEventListener('click', function(){
+  console.log('next');
+});
 
 
-
-wrap.innerHTML = str;
+loadImageList(todayPhoto, start, end);
