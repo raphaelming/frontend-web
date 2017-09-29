@@ -1,20 +1,32 @@
-<!doctype html>
-<html lang="kr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>문제소스</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .wrap {
+    border: 3px solid #ddd;
+  }
+  .wrap > img {
+    margin: 5px;
+  }
+  </style>
 </head>
 <body>
 
-<div id="wrap"></div>
-<div id="pageCount"></div>
-<!-- 버튼 추가 -->
-<button id="prev"><</button>
-<button id="next">></button>
+  <a href="https://github.com/dudtntdud/front-end-start/blob/master/03/%EA%B2%8C%EC%8B%9C%ED%8C%90/app.js">
+    힌트
+  </a>
 
-<script src = "quiz1.js">
-
-</script>
-
+  <div class="wrap"></div>
+  <div>
+    <button id="prev">이전</button>
+    <span id='page'>1</span>/
+    <span id='totalPage'>3</span>
+    <button id="next">다음</button>
+  </div>
+  <script src="quiz1.js"></script>
 </body>
 </html>
