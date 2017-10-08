@@ -8,7 +8,13 @@ function getDom(id)
 var getTodoString = getDom('todoString');
 
 // console.log(getTodoString);
-// key 입력시 이벤트 
+// key 입력시 이벤트
 getTodoString.addEventListener('keyup', function(event){
-  console.log('keyup event test');
+  // console.log('keyup event test');
+  if(event.keyCode === 13){
+    // console.log(getTodoString.value);
+    var newTodo = getTodoString.value;
+    getTodoString.value = "";
+    console.log('new todo :', newTodo);
+  }
 })
