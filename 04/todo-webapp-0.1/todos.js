@@ -9,9 +9,15 @@ var getTodoString = getDom('todoString');
 
 // console.log(getTodoString);
 // key 입력시 이벤트
-getTodoString.addEventListener('keyup', function(event){
+getTodoString.addEventListener('keyup', addTodo);
+function addTodo(event){
   // console.log('keyup event test');
-  if(event.keyCode === 13){
+  if(event.keyCode !== 13)
+  {
+    // enter key가 아닌경우 함수 중지
+    event.stopPropagation();
+    return;
+  }
     // console.log(getTodoString.value);
     var newTodo = getTodoString.value;
     getTodoString.value = "";
@@ -25,5 +31,4 @@ getTodoString.addEventListener('keyup', function(event){
       <input type="checkbox" class="toggle-checked">\
       <span class="text">'+ newTodo +'</span>\
     </li>';
-  }
-})
+}
