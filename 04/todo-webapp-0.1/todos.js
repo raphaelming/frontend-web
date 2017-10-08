@@ -1,1 +1,3 @@
 //start...
+//연결 확인
+console.log('check todos.js');
