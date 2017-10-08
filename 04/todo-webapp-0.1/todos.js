@@ -16,5 +16,14 @@ getTodoString.addEventListener('keyup', function(event){
     var newTodo = getTodoString.value;
     getTodoString.value = "";
     console.log('new todo :', newTodo);
+
+    // list 생성
+    var todoListDom = getDom('todoList');
+    todoListDom.innerHTML += '\
+    <li>\
+      <button class="delete">×</button>\
+      <input type="checkbox" class="toggle-checked">\
+      <span class="text">'+ newTodo +'</span>\
+    </li>';
   }
 })
