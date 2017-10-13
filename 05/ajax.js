@@ -12,8 +12,12 @@ function load() {
   req.open('GET', 'dummy.json', true);
   console.log(req);
   req.onreadystatechange = function() {
-    if(req.readyState === 4){
-      console.log(req.status);
+    if(req.readyState === 4)
+    {
+      if(req.status === 200)
+      {
+        console.log(req.responseText);
+      }
     }
   }
   req.send();
