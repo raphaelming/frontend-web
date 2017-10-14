@@ -15,10 +15,10 @@ function done(result){
 
     console.log(result.data[i].titleKo)
     // str += '<h3>'+result.data[i].
-    str += '<h2>'+result.data[i].titleKo+'</h2>'
+    str += '<h2>'+'영화제목 : '+result.data[i].titleKo+'</h2>'
     str += '<h3>'+result.data[i].rank.ranking+'위'+'</h3>'
     str += '<h3>'+'점유율 '+result.data[i].rank.marketShare+'%'+'</h3>'
-    str += '<h3>'+result.data[i].moviePoint.inspectPointAvg+'점'+'</h3>'
+    str += '<h3>'+'평점 : '+result.data[i].moviePoint.inspectPointAvg+'점'+'</h3>'
     str += '<img src='+result.data[i].photo.fullname+' width="100">'
 
   }
