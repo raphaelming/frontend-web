@@ -23,6 +23,10 @@ function checkDelete(event) {
     return;
   }
   var deleteBtn = event.target;
+
+  if(!confirm('삭제하시겠습니까?')){
+    return;
+  }
   console.log('삭제했어요');
   deleteBtn.parentElement.remove();
   saveData();
