@@ -17,11 +17,13 @@ function addTodo(event) {
 }
 
 function checkDelete(event) {
-  console.log('delete');
+
   if(event.target.className !== 'delete') {
+
     return;
   }
   var deleteBtn = event.target;
+  console.log('삭제했어요');
   deleteBtn.parentElement.remove();
   saveData();
 }
