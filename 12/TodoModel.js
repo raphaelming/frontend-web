@@ -6,4 +6,8 @@
     title: ''
 
   };
+  function abc(myname){
+    
+    console.log(myname)
+  }
 })(Todo);
