@@ -5,8 +5,16 @@
   "main": "byte.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node byte.js",
+    "gulp:test": "gulp default"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "pretty-bytes": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
