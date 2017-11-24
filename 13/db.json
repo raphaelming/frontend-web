@@ -1,10 +1,27 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
-    { "id": 2, "title": "hello json?", "author": "ming" }
+    {
+      "id": 2,
+      "title": "hello json?",
+      "author": "ming"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "title": "하하하하하",
+      "id": 5
+    },
+    {
+      "title": "하하하하하",
+      "id": 6
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
 }
