@@ -24,11 +24,12 @@ function geoFindMe() {
   function success(position) {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
-
+    var nameTag = "일터"
     output.innerHTML = '<p>위도 : ' + latitude + '° <br>경도 : ' + longitude + '°</p>';
 
     var img = new Image();
-    img.src = "http://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+    img.src = "http://map.daum.net/link/map/" + nameTag + "," + latitude + "," + longitude;
+    console.log(img.src);
 
     output.appendChild(img);
   };
